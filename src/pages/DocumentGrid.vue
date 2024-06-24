@@ -28,7 +28,6 @@
         </q-card-actions>
       </q-card>
     </q-card-group>
-
     <!-- Popup para editar el archivo -->
     <q-dialog v-model="showEditDialog">
       <q-card>
@@ -57,7 +56,6 @@
         </q-card-actions>
       </q-card>
     </q-dialog>
-
     <!-- Popup para mostrar información detallada del archivo -->
     <q-dialog v-model="showInfoDialog">
       <q-card>
