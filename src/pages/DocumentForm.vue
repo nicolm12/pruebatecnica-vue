@@ -65,14 +65,13 @@ const document = reactive({
 const handleFileAdded = (files) => {
   if (files.length > 0) {
     document.archivo = files[0];
-    document.nombreArchivo = files[0].name; // Opcional: Puedes actualizar el nombre del archivo automáticamente
+    document.nombreArchivo = files[0].name;
   }
 };
 
 const addDocument = () => {
   documentStore.addDocument({ ...document });
   document.id = Math.random().toString(36).substr(2, 10);
-  // Resetear el formulario después de agregar el documento
   document.numeroIdentificacion = "";
   document.nombre = "";
   document.apellido = "";
@@ -87,10 +86,10 @@ const addDocument = () => {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Ajusta la altura según necesites */
+  min-height: 100vh;
 }
 
 .q-form {
-  width: 100%; /* Asegura que el formulario ocupe todo el ancho del card */
+  width: 100%;
 }
 </style>

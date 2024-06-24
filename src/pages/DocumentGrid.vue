@@ -117,7 +117,7 @@ const getFilePreview = (file) => {
 
 const openEditDialog = (file) => {
   selectedFile.value = file;
-  editedFile.value = { ...file }; // Clonamos el objeto para evitar mutaciones directas
+  editedFile.value = { ...file };
   showEditDialog.value = true;
 };
 
@@ -171,7 +171,7 @@ const deleteFile = (file) => {
 }
 
 .q-btn {
-  margin-left: 8px; /* Espacio entre los botones */
+  margin-left: 8px;
 }
 
 .custom-card {
@@ -179,7 +179,7 @@ const deleteFile = (file) => {
   padding: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  width: 250px; /* Ancho fijo */
+  width: 250px;
 }
 
 .fixed-img {
