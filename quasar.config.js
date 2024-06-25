@@ -1,4 +1,3 @@
-// quasar.conf.js
 module.exports = function (/* ctx */) {
   return {
     boot: ["router", "pinia"],
